@@ -22,6 +22,7 @@ public class EmailService {
     @Value("${spring.mail.username}")
     private String emailSender;
 
+    // This Method is for Sending the mail and the Parameter is EmailDetails Class
     public void sendSimpleMail(EmailDetails emailDetails) {
         try {
 //            SimpleMailMessage message = new SimpleMailMessage();

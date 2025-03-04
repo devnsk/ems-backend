@@ -7,6 +7,9 @@ import lombok.*;
 @Builder
 
 public class EmailDetails {
+
+    // This Class Created for what are the requirements for sending the mail !
+
     private String recipient ;
     private String subject ;
     private String otp ;

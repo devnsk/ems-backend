@@ -10,6 +10,8 @@ import java.util.Properties;
 
 @Configuration
 public class Config {
+
+    // I have not given the Values in properties file
     @Value("${spring.mail.host}")
     private String mailHost;
     @Value("${spring.mail.port}")
@@ -19,6 +21,7 @@ public class Config {
     @Value("${spring.mail.password}")
     private String mailPassword;
 
+    // This method is having the details of HOSt , mail port , from whom mail will be sent , mail password of owner
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
